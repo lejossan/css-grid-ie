@@ -1,0 +1,92 @@
+
+/* distribute colors from a scheme to all cells */
+@mixin dist-colors($num: length($palette)){
+  @for $i from 1 through $num {
+    &--#{$i} {
+      background-color: #{nth($palette, $i)};
+    }
+  }
+}
+
+@mixin display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+/* initial distribution of rows */
+@mixin dist-row-span($num: 20) {
+  @for $i from 1 through $num {
+    &__#{$i} {
+      @include grid-rows-span($i);
+    }
+  }
+}
+
+/* Initial even distribution of columns for IE 
+ * This will be overridden if spans--col__# is used
+*/
+@mixin dist-columns($num: 20) {
+  @for $i from 1 through $num {
+    &--#{$i} {
+      -ms-grid-column: #{$i};
+    }
+  }
+}
+
+/* Initial even distribution of columns for IE 
+ * This will be overridden if spans--col__# is used
+*/
+@mixin dist-rows($num: 20) {
+  @for $i from 1 through $num {
+    &--#{$i} {
+      -ms-grid-row: #{$i};
+    }
+  }
+}
+
+/* create classes to be used for column spans 
+ * ex. spans--col__3 will span over 3 columns
+*/
+@mixin dist-columns-span($num: $base--column-count+1) {
+  @for $i from 1 through $num {
+    &__#{$i} {
+      @include grid-columns-span(1, $i);
+    }
+  }
+}
+
+/* the column span needs to props for IE to work */
+@mixin grid-columns-span ($col-start, $col-end) {
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start + 1;
+  grid-column: #{$col-start}/#{$col-end+1};
+}
+
+/* create classes to be used for row spans 
+ * ex. spans--row__3 will span over 3 rows
+*/
+@mixin grid-rows-span ($row-span) {
+  -ms-grid-row-span: $row-span;
+  grid-row: span #{$row-span};
+}
+
+/* set template for rows */
+@mixin grid-template-rows ($num, $unit) {
+  grid-template-rows: repeat($num, 1fr);
+  $rows: "";
+  @for $i from 1 through $num {
+    $rows: #{$rows} #{$unit};
+  }
+  -ms-grid-rows: #{$rows};
+}
+
+/* set template for columns */
+@mixin grid-template-columns ($num, $unit) {
+  grid-template-columns: repeat($num, 1fr);
+  $columns: "";
+  @for $i from 1 through $num {
+    $columns: $columns + " " + $unit;
+  }
+  -ms-grid-columns: #{$columns};
+}
+

@@ -1,0 +1,45 @@
+
+.grid {
+  height: auto;
+  @include display-grid;
+  @include grid-template-columns($base--column-count, "1fr");
+  @include grid-template-rows(4, '40px');
+  margin: 40px auto;
+}
+
+.spans {
+  &--row {
+    @include dist-row-span();
+  }
+  &--col {
+    @include dist-columns-span();
+  }
+}
+
+.row {
+  @include dist-rows();
+}
+
+.column {
+  min-height: 40px;
+  width: auto;
+  @include dist-colors();
+  &--3 {
+    @include grid-columns-span(3, 10);
+  }
+  &--4 {
+    @include grid-columns-span(11, 13);
+  }
+  &--5 {
+    @include grid-columns-span(3, 4);
+  }
+  &--6 {
+    @include grid-columns-span(5, 6);
+  }
+  &--7 {
+    @include grid-columns-span(7, 8);
+  }
+  &--8 {
+    @include grid-columns-span(9, 10);
+  }
+}

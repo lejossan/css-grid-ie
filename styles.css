@@ -1,0 +1,422 @@
+/* distribute colors from a scheme to all cells */
+/* initial distribution of rows */
+/* Initial even distribution of columns for IE 
+ * This will be overridden if spans--col__# is used
+*/
+/* Initial even distribution of columns for IE 
+ * This will be overridden if spans--col__# is used
+*/
+/* create classes to be used for column spans 
+ * ex. spans--col__3 will span over 3 columns
+*/
+/* the column span needs to props for IE to work */
+/* create classes to be used for row spans 
+ * ex. spans--row__3 will span over 3 rows
+*/
+/* set template for rows */
+/* set template for columns */
+.grid {
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  -ms-grid-columns:  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-rows:  40px 40px 40px 40px;
+  margin: 40px auto;
+}
+
+.spans--row__1 {
+  -ms-grid-row-span: 1;
+  grid-row: span 1;
+}
+
+.spans--row__2 {
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+}
+
+.spans--row__3 {
+  -ms-grid-row-span: 3;
+  grid-row: span 3;
+}
+
+.spans--row__4 {
+  -ms-grid-row-span: 4;
+  grid-row: span 4;
+}
+
+.spans--row__5 {
+  -ms-grid-row-span: 5;
+  grid-row: span 5;
+}
+
+.spans--row__6 {
+  -ms-grid-row-span: 6;
+  grid-row: span 6;
+}
+
+.spans--row__7 {
+  -ms-grid-row-span: 7;
+  grid-row: span 7;
+}
+
+.spans--row__8 {
+  -ms-grid-row-span: 8;
+  grid-row: span 8;
+}
+
+.spans--row__9 {
+  -ms-grid-row-span: 9;
+  grid-row: span 9;
+}
+
+.spans--row__10 {
+  -ms-grid-row-span: 10;
+  grid-row: span 10;
+}
+
+.spans--row__11 {
+  -ms-grid-row-span: 11;
+  grid-row: span 11;
+}
+
+.spans--row__12 {
+  -ms-grid-row-span: 12;
+  grid-row: span 12;
+}
+
+.spans--row__13 {
+  -ms-grid-row-span: 13;
+  grid-row: span 13;
+}
+
+.spans--row__14 {
+  -ms-grid-row-span: 14;
+  grid-row: span 14;
+}
+
+.spans--row__15 {
+  -ms-grid-row-span: 15;
+  grid-row: span 15;
+}
+
+.spans--row__16 {
+  -ms-grid-row-span: 16;
+  grid-row: span 16;
+}
+
+.spans--row__17 {
+  -ms-grid-row-span: 17;
+  grid-row: span 17;
+}
+
+.spans--row__18 {
+  -ms-grid-row-span: 18;
+  grid-row: span 18;
+}
+
+.spans--row__19 {
+  -ms-grid-row-span: 19;
+  grid-row: span 19;
+}
+
+.spans--row__20 {
+  -ms-grid-row-span: 20;
+  grid-row: span 20;
+}
+
+.spans--col__1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+}
+
+.spans--col__2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+}
+
+.spans--col__3 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+.spans--col__4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+.spans--col__5 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-column: 1/6;
+}
+
+.spans--col__6 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1/7;
+}
+
+.spans--col__7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+}
+
+.spans--col__8 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.spans--col__9 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 9;
+  grid-column: 1/10;
+}
+
+.spans--col__10 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 10;
+  grid-column: 1/11;
+}
+
+.spans--col__11 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 11;
+  grid-column: 1/12;
+}
+
+.spans--col__12 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
+}
+
+.spans--col__13 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 13;
+  grid-column: 1/14;
+}
+
+.row--1 {
+  -ms-grid-row: 1;
+}
+
+.row--2 {
+  -ms-grid-row: 2;
+}
+
+.row--3 {
+  -ms-grid-row: 3;
+}
+
+.row--4 {
+  -ms-grid-row: 4;
+}
+
+.row--5 {
+  -ms-grid-row: 5;
+}
+
+.row--6 {
+  -ms-grid-row: 6;
+}
+
+.row--7 {
+  -ms-grid-row: 7;
+}
+
+.row--8 {
+  -ms-grid-row: 8;
+}
+
+.row--9 {
+  -ms-grid-row: 9;
+}
+
+.row--10 {
+  -ms-grid-row: 10;
+}
+
+.row--11 {
+  -ms-grid-row: 11;
+}
+
+.row--12 {
+  -ms-grid-row: 12;
+}
+
+.row--13 {
+  -ms-grid-row: 13;
+}
+
+.row--14 {
+  -ms-grid-row: 14;
+}
+
+.row--15 {
+  -ms-grid-row: 15;
+}
+
+.row--16 {
+  -ms-grid-row: 16;
+}
+
+.row--17 {
+  -ms-grid-row: 17;
+}
+
+.row--18 {
+  -ms-grid-row: 18;
+}
+
+.row--19 {
+  -ms-grid-row: 19;
+}
+
+.row--20 {
+  -ms-grid-row: 20;
+}
+
+.column {
+  min-height: 40px;
+  width: auto;
+}
+
+.column--1 {
+  background-color: #336699;
+}
+
+.column--2 {
+  background-color: #79BEDB;
+}
+
+.column--3 {
+  background-color: #6B78B4;
+}
+
+.column--4 {
+  background-color: #028482;
+}
+
+.column--5 {
+  background-color: #7ABA7A;
+}
+
+.column--6 {
+  background-color: #9C9F84;
+}
+
+.column--7 {
+  background-color: #A97D5D;
+}
+
+.column--8 {
+  background-color: #5C755E;
+}
+
+.column--9 {
+  background-color: #C1DAD6;
+}
+
+.column--10 {
+  background-color: #ACD1E9;
+}
+
+.column--11 {
+  background-color: #6D929B;
+}
+
+.column--12 {
+  background-color: #E8D0A9;
+}
+
+.column--13 {
+  background-color: #B7AFA3;
+}
+
+.column--14 {
+  background-color: #FF9966;
+}
+
+.column--15 {
+  background-color: #003366;
+}
+
+.column--16 {
+  background-color: #69A583;
+}
+
+.column--17 {
+  background-color: #3399FF;
+}
+
+.column--18 {
+  background-color: #CCCCCC;
+}
+
+.column--19 {
+  background-color: #666666;
+}
+
+.column--20 {
+  background-color: #7FCA9F;
+}
+
+.column--21 {
+  background-color: #F4BA70;
+}
+
+.column--22 {
+  background-color: #85C1F5;
+}
+
+.column--23 {
+  background-color: #4A789C;
+}
+
+.column--24 {
+  background-color: #4D8963;
+}
+
+.column--3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 8;
+  grid-column: 3/11;
+}
+
+.column--4 {
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 3;
+  grid-column: 11/14;
+}
+
+.column--5 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-column: 3/5;
+}
+
+.column--6 {
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 2;
+  grid-column: 5/7;
+}
+
+.column--7 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 2;
+  grid-column: 7/9;
+}
+
+.column--8 {
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 2;
+  grid-column: 9/11;
+}
